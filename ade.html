@@ -1,9 +1,10 @@
+      ```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IBL RasaNusantara - Warung Digital</title>
+    <title>IBL Food Corner - Warung Digital</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -37,7 +38,8 @@
                 <div class="w-10 h-10 bg-brand rounded-full flex items-center justify-center text-white shadow-lg shadow-brand/30">
                     <i class="fas fa-utensils"></i>
                 </div>
-                <span class="text-xl font-extrabold tracking-tighter">IBL <span class="text-brand">RasaNusantara</span></span>
+                <!-- Nama Toko: IBL Food Corner -->
+                <span class="text-xl font-extrabold tracking-tighter">IBL <span class="text-brand">Food Corner</span></span>
             </div>
 
             <div class="flex items-center gap-4">
@@ -69,6 +71,765 @@
         <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
             <div class="space-y-8">
                 <div class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-orange-100 text-brand text-xs font-bold animate-pulse">
+                    <i class="fas fa-award"></i> Restoran Pilihan Terbaik #1 di Indonesia
+                </div>
+                <!-- Teks Hero yang baru dan disesuaikan ukurannya agar pas -->
+                <h1 class="text-4xl lg:text-5xl font-extrabold leading-[1.2] tracking-tight text-gray-900">
+                    IBL Food Corner siap memberikan <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-orange-400">pengalaman kuliner</span> yang enak, praktis, dan berkesan.
+                </h1>
+                <p class="text-lg text-gray-500 leading-relaxed max-w-lg">
+                    Kami menyajikan hidangan autentik dari rempah pilihan dengan sentuhan modern untuk lidah Anda. Pesan sekarang, bayar mudah dengan QRIS!
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#menu" class="bg-brand text-white px-8 py-4 rounded-2xl font-bold shadow-xl shadow-brand/30 hover:scale-105 transition flex items-center gap-3">
+                        Pesan Sekarang <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <div class="flex items-center gap-4 px-6 py-4">
+                        <div class="flex -space-x-3">
+                            <img src="https://i.pravatar.cc/150?u=1" class="w-10 h-10 rounded-full border-4 border-white" alt="[Pelanggan 1]">
+                            <img src="https://i.pravatar.cc/150?u=2" class="w-10 h-10 rounded-full border-4 border-white" alt="[Pelanggan 2]">
+                            <img src="https://i.pravatar.cc/150?u=3" class="w-10 h-10 rounded-full border-4 border-white" alt="[Pelanggan 3]">
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-gray-900">10rb+ Pelanggan</p>
+                            <div class="flex text-yellow-400 text-[10px]">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative flex justify-center items-center">
+                <div class="absolute w-[120%] h-[120%] border-2 border-dashed border-brand/20 rounded-full slow-spin"></div>
+                <div class="relative w-full max-w-lg">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80" 
+                         class="w-full h-auto rounded-[60px] shadow-2xl relative z-10 floating" alt="[Hidangan Utama]">
+                    
+                    <div class="absolute -top-6 -right-6 glass p-4 rounded-3xl shadow-xl z-20 floating animate-[floating_4s_infinite]">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-green-100 rounded-2xl flex items-center justify-center text-green-600">
+                                <i class="fas fa-leaf text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold">Bahan Segar</p>
+                                <p class="text-[10px] text-gray-500">100% Organik</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="absolute -bottom-10 -left-6 glass p-4 rounded-3xl shadow-xl z-20 floating animate-[floating_5s_infinite]">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-orange-100 rounded-2xl flex items-center justify-center text-orange-600">
+                                <i class="fas fa-bolt text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold">Kilat!</p>
+                                <p class="text-[10px] text-gray-500">Kirim 15 Menit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-extrabold mb-2">Rekomendasi <span class="text-brand">Terlaris</span></h2>
+                    <p class="text-gray-500">Menu favorit pelanggan minggu ini</p>
+                </div>
+            </div>
+            <div id="recommendationGrid" class="grid md:grid-cols-3 gap-8">
+                <!-- Data via JS -->
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="py-20 px-6 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-extrabold mb-4">Daftar Menu Kita</h2>
+                <div class="flex flex-wrap justify-center gap-3 mt-8">
+                    <button onclick="filterMenu('Semua')" class="filter-btn active bg-brand text-white px-8 py-3 rounded-2xl font-bold shadow-lg transition">Semua</button>
+                    <button onclick="filterMenu('Makanan Utama')" class="filter-btn bg-white text-gray-500 hover:bg-gray-100 px-8 py-3 rounded-2xl font-bold transition">Makanan Utama</button>
+                    <button onclick="filterMenu('Minuman')" class="filter-btn bg-white text-gray-500 hover:bg-gray-100 px-8 py-3 rounded-2xl font-bold transition">Minuman</button>
+                </div>
+            </div>
+
+            <div id="menuGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Data via JS -->
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Modal Keranjang -->
+    <div id="cartModal" class="fixed inset-0 z-[100] hidden">
+        <div class="absolute inset-0 bg-black/40 backdrop-blur-sm transition-opacity duration-300 opacity-0" id="cartOverlay" onclick="closeCart()"></div>
+        <div class="absolute top-0 right-0 w-full max-w-md h-full bg-white shadow-2xl transition-transform duration-300 translate-x-full flex flex-col" id="cartSidebar">
+            <div class="p-6 border-b flex justify-between items-center">
+                <h3 class="text-xl font-bold">Keranjang Anda</h3>
+                <button onclick="closeCart()" class="text-gray-400 hover:text-black"><i class="fas fa-times text-xl"></i></button>
+            </div>
+            <div id="cartItems" class="flex-1 overflow-y-auto p-6 space-y-6">
+                <!-- Cart data via JS -->
+            </div>
+            <div class="p-6 border-t bg-gray-50 space-y-4">
+                <div class="flex justify-between font-bold text-lg">
+                    <span>Total Tagihan</span>
+                    <span id="cartTotal" class="text-brand">Rp 0</span>
+                </div>
+                <button id="checkoutBtn" class="w-full bg-brand text-white py-4 rounded-2xl font-bold shadow-xl shadow-brand/20 hover:bg-orange-600 transition active:scale-95 disabled:bg-gray-300">
+                    Lanjut Pembayaran
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Login/Register -->
+    <div id="authModal" class="fixed inset-0 z-[120] hidden flex items-center justify-center p-4">
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="closeAuthModal()"></div>
+        <div class="bg-white w-full max-w-md rounded-[32px] overflow-hidden relative z-10 shadow-2xl">
+            <div class="p-8 text-center bg-gray-50 border-b">
+                <h3 id="authTitle" class="text-2xl font-bold">Masuk ke Akun</h3>
+                <p class="text-gray-500 text-sm mt-1">Gunakan 'admin' & 'admin123' untuk akses penuh</p>
+            </div>
+            <div class="p-8">
+                <div class="flex p-1 bg-gray-100 rounded-xl mb-6">
+                    <button onclick="switchAuth('login')" id="btnTabLogin" class="flex-1 py-2 font-bold rounded-lg bg-white shadow-sm transition">Masuk</button>
+                    <button onclick="switchAuth('register')" id="btnTabRegister" class="flex-1 py-2 font-bold text-gray-500 transition">Daftar</button>
+                </div>
+                
+                <form id="authForm" onsubmit="handleAuth(event)" class="space-y-4">
+                    <div id="regNameGroup" class="hidden">
+                        <input type="text" id="authName" placeholder="Nama Lengkap" class="w-full px-4 py-3 bg-gray-50 rounded-xl outline-none focus:ring-2 focus:ring-brand">
+                    </div>
+                    <input type="text" id="authEmail" placeholder="Email / Username" required class="w-full px-4 py-3 bg-gray-50 rounded-xl outline-none focus:ring-2 focus:ring-brand">
+                    <input type="password" id="authPassword" placeholder="Kata Sandi" required class="w-full px-4 py-3 bg-gray-50 rounded-xl outline-none focus:ring-2 focus:ring-brand">
+                    <button type="submit" class="w-full bg-brand text-white py-4 rounded-xl font-bold shadow-lg mt-4 hover:bg-orange-600 transition">Lanjutkan</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Admin Dashboard -->
+    <div id="adminModal" class="fixed inset-0 z-[110] hidden flex items-center justify-center p-4">
+        <div class="absolute inset-0 bg-black/70 backdrop-blur-md" onclick="closeAdminModal()"></div>
+        <div class="bg-white w-full max-w-5xl h-[85vh] rounded-[40px] flex flex-col relative z-10 overflow-hidden shadow-2xl">
+            <div class="p-8 border-b flex justify-between items-center bg-white sticky top-0">
+                <div>
+                    <h3 class="text-2xl font-bold">Dashboard Kelola Menu</h3>
+                    <p class="text-sm text-gray-400">Tambah, Edit, atau Hapus daftar produk Anda</p>
+                </div>
+                <div class="flex gap-3">
+                    <button onclick="openFormModal()" class="bg-brand text-white px-6 py-3 rounded-2xl font-bold shadow-lg shadow-brand/20 flex items-center gap-2 hover:scale-105 transition">
+                        <i class="fas fa-plus"></i> Tambah Menu Baru
+                    </button>
+                    <button onclick="closeAdminModal()" class="w-12 h-12 bg-gray-100 rounded-2xl flex items-center justify-center text-gray-400 hover:text-black transition">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="flex-1 overflow-auto p-8">
+                <table class="w-full text-left">
+                    <thead class="sticky top-0 bg-white border-b-2">
+                        <tr>
+                            <th class="py-4 text-xs font-bold text-gray-400 uppercase">Produk</th>
+                            <th class="py-4 text-xs font-bold text-gray-400 uppercase">Kategori</th>
+                            <th class="py-4 text-xs font-bold text-gray-400 uppercase">Harga</th>
+                            <th class="py-4 text-xs font-bold text-gray-400 uppercase">Rating</th>
+                            <th class="py-4 text-xs font-bold text-gray-400 uppercase text-right">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="adminTableBody" class="divide-y divide-gray-100">
+                        <!-- Admin Table via JS -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Form Tambah/Edit -->
+    <div id="formModal" class="fixed inset-0 z-[120] hidden flex items-center justify-center p-4">
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="closeFormModal()"></div>
+        <div class="bg-white w-full max-w-lg rounded-[28px] p-8 relative z-10 shadow-2xl">
+            <h3 id="formTitle" class="text-xl font-bold mb-6">Tambah Menu</h3>
+            <form id="menuForm" onsubmit="handleMenuSubmit(event)" class="space-y-4">
+                <!-- Image Preview Area -->
+                <div class="w-full h-40 bg-gray-100 rounded-2xl overflow-hidden mb-4 border-2 border-dashed border-gray-200 flex items-center justify-center relative">
+                    <img id="formImagePreview" src="https://placehold.co/400x300?text=Pratinjau+Foto" class="w-full h-full object-cover" alt="[Pratinjau Foto]">
+                    <div class="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                        <span class="text-white text-xs font-bold bg-black/50 px-3 py-1 rounded-full">Pratinjau Foto</span>
+                    </div>
+                </div>
+                
+                <input type="hidden" id="editId">
+                <input type="text" id="mName" placeholder="Nama Menu" required class="w-full px-4 py-3 bg-gray-50 rounded-xl outline-none focus:ring-2 focus:ring-brand">
+                
+                <div class="grid grid-cols-2 gap-4">
+                    <select id="mCategory" class="w-full px-4 py-3 bg-gray-50 rounded-xl outline-none focus:ring-2 focus:ring-brand">
+                        <option value="Makanan Utama">Makanan Utama</option>
+                        <option value="Minuman">Minuman</option>
+                    </select>
+                    <input type="number" id="mPrice" placeholder="Harga (Rp)" required class="w-full px-4 py-3 bg-gray-50 rounded-xl outline-none focus:ring-2 focus:ring-brand">
+                </div>
+
+                <input type="url" id="mImage" oninput="updateImagePreview(this.value)" placeholder="Masukkan URL Foto (https://...)" required class="w-full px-4 py-3 bg-gray-50 rounded-xl outline-none focus:ring-2 focus:ring-brand">
+                <p class="text-[10px] text-gray-400 px-1 italic">*Gunakan link gambar dari Unsplash atau sumber lain agar foto muncul.</p>
+                
+                <textarea id="mDesc" placeholder="Deskripsi Singkat" required class="w-full px-4 py-3 bg-gray-50 rounded-xl outline-none focus:ring-2 focus:ring-brand h-24"></textarea>
+                
+                <div class="flex gap-4 pt-4">
+                    <button type="button" onclick="closeFormModal()" class="flex-1 py-4 font-bold text-gray-500 hover:bg-gray-100 rounded-2xl transition">Batal</button>
+                    <button type="submit" class="flex-1 py-4 font-bold bg-brand text-white rounded-2xl shadow-lg transition">Simpan Menu</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Pembayaran -->
+    <div id="paymentModal" class="fixed inset-0 z-[130] hidden flex items-center justify-center p-4">
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-300 opacity-0" id="paymentOverlay"></div>
+        <div class="bg-white w-full max-w-md rounded-[40px] p-8 relative z-10 shadow-2xl transition-all duration-300 scale-95 opacity-0" id="paymentContent">
+            <div class="text-center mb-8">
+                <h3 class="text-2xl font-bold">Pilih Pembayaran</h3>
+                <div class="mt-2 text-gray-500">Total Tagihan: <span id="paymentTotalDisplay" class="font-extrabold text-brand">Rp 0</span></div>
+            </div>
+            
+            <div class="space-y-4">
+                <button onclick="selectMethod('QRIS')" class="payment-method w-full p-6 border-2 border-gray-100 rounded-3xl flex items-center justify-between hover:border-brand/30 transition group">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 font-bold">QRIS</div>
+                        <span class="font-bold text-gray-700">Scan QRIS All Payment</span>
+                    </div>
+                    <div class="method-check w-6 h-6 border-2 rounded-full border-gray-200 group-active:bg-brand"></div>
+                </button>
+
+                <button onclick="selectMethod('GOPAY')" class="payment-method w-full p-6 border-2 border-gray-100 rounded-3xl flex items-center justify-between hover:border-brand/30 transition group">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 font-bold">GP</div>
+                        <span class="font-bold text-gray-700">GoPay</span>
+                    </div>
+                    <div class="method-check w-6 h-6 border-2 rounded-full border-gray-200 group-active:bg-brand"></div>
+                </button>
+
+                <button onclick="selectMethod('DANA')" class="payment-method w-full p-6 border-2 border-gray-100 rounded-3xl flex items-center justify-between hover:border-brand/30 transition group">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-blue rounded-2xl flex items-center justify-center text-blue-500 font-bold">DN</div>
+                        <span class="font-bold text-gray-700">DANA</span>
+                    </div>
+                    <div class="method-check w-6 h-6 border-2 rounded-full border-gray-200 group-active:bg-brand"></div>
+                </button>
+            </div>
+
+            <div class="mt-8 flex gap-4">
+                <button onclick="closePayment()" class="flex-1 py-4 font-bold text-gray-400 bg-gray-50 rounded-2xl">Batal</button>
+                <button onclick="processPayment()" class="flex-1 py-4 font-bold bg-brand text-white rounded-2xl shadow-xl shadow-brand/20">Bayar Sekarang</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification & Custom Confirm -->
+    <div id="notificationArea" class="fixed bottom-10 left-1/2 -translate-x-1/2 z-[200] flex flex-col gap-2"></div>
+    
+    <div id="confirmModal" class="fixed inset-0 z-[300] hidden flex items-center justify-center p-4">
+        <div class="absolute inset-0 bg-black/80 backdrop-blur-sm"></div>
+        <div class="bg-white w-full max-w-xs rounded-[32px] p-8 text-center relative z-10 shadow-2xl">
+            <div class="w-16 h-16 bg-red-100 text-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-trash-alt text-2xl"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-2">Hapus Item?</h4>
+            <p class="text-gray-500 text-sm mb-8">Tindakan ini tidak bisa dibatalkan.</p>
+            <div class="flex gap-3">
+                <button onclick="cancelConfirm()" class="flex-1 py-3 bg-gray-100 rounded-xl font-bold">Batal</button>
+                <button id="confirmActionBtn" class="flex-1 py-3 bg-red-500 text-white rounded-xl font-bold">Hapus</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- DATA & STATE ---
+        const defaultMenu = [
+            { id: 1, name: "Nasi Goreng Spesial", price: 35000, category: "Makanan Utama", rating: 4.8, image: "https://images.unsplash.com/photo-1512058560566-d837c3a1f6c7?auto=format&fit=crop&w=500", desc: "Nasi goreng bumbu rempah dengan telur mata sapi dan ayam suwir.", reviews: [] },
+            { id: 2, name: "Sate Ayam Madura", price: 30000, category: "Makanan Utama", rating: 4.9, image: "https://images.unsplash.com/photo-1529692236671-f1f6e9481bfa?auto=format&fit=crop&w=500", desc: "Sate ayam empuk dengan bumbu kacang kental yang legit.", reviews: [] },
+            { id: 3, name: "Rendang Sapi Minang", price: 45000, category: "Makanan Utama", rating: 4.9, image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=500", desc: "Daging sapi pilihan yang dimasak berjam-jam dengan rempah autentik.", reviews: [] },
+            { id: 4, name: "Ayam Bakar Taliwang", price: 38000, category: "Makanan Utama", rating: 4.7, image: "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=500", desc: "Ayam bakar pedas khas Lombok yang menggoda selera.", reviews: [] },
+            { id: 5, name: "Gado-Gado Betawi", price: 25000, category: "Makanan Utama", rating: 4.6, image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=500", desc: "Sayuran segar dengan siraman saus kacang gurih.", reviews: [] },
+            { id: 11, name: "Nasi Padang Komplit", price: 40000, category: "Makanan Utama", rating: 5.0, image: "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=500", desc: "Sajiang lengkap dengan gulai nangka, daun singkong, dan rendang.", reviews: [] },
+            { id: 12, name: "Mie Ayam Bakso", price: 22000, category: "Makanan Utama", rating: 4.7, image: "https://images.unsplash.com/photo-1626074353765-517a681e40be?auto=format&fit=crop&w=500", desc: "Mie kenyal dengan topping ayam bumbu kecap dan bakso sapi.", reviews: [] },
+            { id: 13, name: "Bakso Solo Super", price: 25000, category: "Makanan Utama", rating: 4.8, image: "https://images.unsplash.com/photo-1593001874117-c99c43bc93bd?auto=format&fit=crop&w=500", desc: "Bakso urat khas Solo dengan kuah kaldu sapi bening yang gurih.", reviews: [] },
+            { id: 14, name: "Soto Ayam Lamongan", price: 20000, category: "Makanan Utama", rating: 4.6, image: "https://images.unsplash.com/photo-1618413651268-dfc9a63273e0?auto=format&fit=crop&w=500", desc: "Soto kuning kental dengan taburan koya udang yang ikonik.", reviews: [] },
+            { id: 15, name: "Bebek Goreng Madura", price: 42000, category: "Makanan Utama", rating: 4.9, image: "https://images.unsplash.com/photo-1626074353765-517a681e40be?auto=format&fit=crop&w=500", desc: "Bebek goreng empuk dengan bumbu hitam pedas khas Madura.", reviews: [] },
+            { id: 6, name: "Es Teh Manis", price: 5000, category: "Minuman", rating: 4.5, image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=500", desc: "Teh pilihan yang menyegarkan dahaga.", reviews: [] },
+            { id: 7, name: "Jus Alpukat", price: 15000, category: "Minuman", rating: 4.8, image: "https://images.unsplash.com/photo-1589135398302-388cd658f247?auto=format&fit=crop&w=500", desc: "Alpukat mentega segar dengan susu cokelat.", reviews: [] },
+            { id: 8, name: "Wedang Jahe", price: 12000, category: "Minuman", rating: 4.7, image: "https://images.unsplash.com/photo-1515442261605-645124fb83f4?auto=format&fit=crop&w=500", desc: "Minuman tradisional penghangat tubuh.", reviews: [] },
+            { id: 9, name: "Es Campur", price: 18000, category: "Minuman", rating: 4.9, image: "https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?auto=format&fit=crop&w=500", desc: "Buah-buahan segar dengan sirup dan susu kental manis.", reviews: [] },
+            { id: 10, name: "Kopi Gula Aren", price: 20000, category: "Minuman", rating: 4.8, image: "https://images.unsplash.com/photo-1541167760496-162955ed8a9f?auto=format&fit=crop&w=500", desc: "Kopi lokal dengan sensasi manis gula aren.", reviews: [] },
+            { id: 16, name: "Jus Mangga Harum", price: 18000, category: "Minuman", rating: 4.8, image: "https://images.unsplash.com/photo-1553531384-cc64ac80f931?auto=format&fit=crop&w=500", desc: "Mangga harum manis segar tanpa pemanis buatan.", reviews: [] },
+            { id: 17, name: "Es Jeruk Peras", price: 12000, category: "Minuman", rating: 4.7, image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500", desc: "Jeruk peras murni dengan es batu yang sangat segar.", reviews: [] },
+            { id: 18, name: "Es Kelapa Muda", price: 15000, category: "Minuman", rating: 4.9, image: "https://images.unsplash.com/photo-1525385133335-842822916524?auto=format&fit=crop&w=500", desc: "Air kelapa muda segar langsung dari buahnya.", reviews: [] },
+            { id: 19, name: "Bandrek Jahe Susu", price: 14000, category: "Minuman", rating: 4.6, image: "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=500", desc: "Minuman penghangat tradisional dengan paduan susu dan jahe.", reviews: [] },
+            { id: 20, name: "Teh Tarik Klasik", price: 16000, category: "Minuman", rating: 4.7, image: "https://images.unsplash.com/photo-1594631252845-29fc45865157?auto=format&fit=crop&w=500", desc: "Teh susu dengan foam lembut hasil tarikan tradisional.", reviews: [] }
+        ];
+
+        let menuData = JSON.parse(localStorage.getItem('rasa_menu')) || defaultMenu;
+        let users = JSON.parse(localStorage.getItem('rasa_users')) || [
+            { name: "Administrator", email: "admin", password: "admin123", isAdmin: true }
+        ];
+        let currentUser = JSON.parse(localStorage.getItem('rasa_currentUser')) || null;
+        let cart = [];
+        let authMode = 'login';
+        let currentFilter = 'Semua';
+        let selectedMethod = null;
+
+        // --- HELPER FUNCTIONS ---
+        const formatRupiah = (num) => "Rp " + num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
+        window.showNotification = (msg, type = 'success') => {
+            const area = document.getElementById('notificationArea');
+            const div = document.createElement('div');
+            div.className = `px-6 py-3 rounded-2xl shadow-xl font-bold text-sm text-white transform transition duration-300 translate-y-10 opacity-0 ${type === 'success' ? 'bg-green-500' : 'bg-red-500'}`;
+            div.innerText = msg;
+            area.appendChild(div);
+            setTimeout(() => { div.classList.remove('translate-y-10', 'opacity-0'); }, 10);
+            setTimeout(() => {
+                div.classList.add('translate-y-10', 'opacity-0');
+                setTimeout(() => div.remove(), 300);
+            }, 3000);
+        };
+
+        function getSafeImage(url) {
+            return `src="${url}" onerror="this.onerror=null;this.src='https://placehold.co/600x400/eeeeee/666666?text=Foto+Tidak+Tersedia';"`;
+        }
+
+        // --- AUTH LOGIC ---
+        window.openAuthModal = () => {
+            if(currentUser) {
+                // Jika sudah login, klik profil akan memicu konfirmasi logout
+                askLogout();
+                return;
+            }
+            document.getElementById('authModal').classList.remove('hidden');
+        };
+
+        window.closeAuthModal = () => document.getElementById('authModal').classList.add('hidden');
+
+        // Fungsi Logout Baru
+        window.askLogout = () => {
+            const modal = document.getElementById('confirmModal');
+            const title = modal.querySelector('h4');
+            const desc = modal.querySelector('p');
+            const btn = document.getElementById('confirmActionBtn');
+            
+            title.innerText = "Keluar Akun?";
+            desc.innerText = `Hai ${currentUser.name}, apakah Anda yakin ingin keluar?`;
+            btn.innerText = "Keluar Sekarang";
+            btn.className = "flex-1 py-3 bg-gray-900 text-white rounded-xl font-bold";
+            
+            btn.onclick = () => {
+                currentUser = null;
+                localStorage.removeItem('rasa_currentUser');
+                updateAuthUI();
+                cancelConfirm();
+                showNotification("Anda telah keluar dari akun.");
+            };
+            
+            modal.classList.remove('hidden');
+        };
+
+        window.switchAuth = (mode) => {
+            authMode = mode;
+            const title = document.getElementById('authTitle');
+            const btnLogin = document.getElementById('btnTabLogin');
+            const btnReg = document.getElementById('btnTabRegister');
+            const regGroup = document.getElementById('regNameGroup');
+
+            if(mode === 'login') {
+                title.innerText = 'Masuk ke Akun';
+                btnLogin.classList.add('bg-white', 'shadow-sm');
+                btnLogin.classList.remove('text-gray-500');
+                btnReg.classList.remove('bg-white', 'shadow-sm');
+                btnReg.classList.add('text-gray-500');
+                regGroup.classList.add('hidden');
+            } else {
+                title.innerText = 'Daftar Akun Baru';
+                btnReg.classList.add('bg-white', 'shadow-sm');
+                btnReg.classList.remove('text-gray-500');
+                btnLogin.classList.remove('bg-white', 'shadow-sm');
+                btnLogin.classList.add('text-gray-500');
+                regGroup.classList.remove('hidden');
+            }
+        };
+
+        window.handleAuth = (e) => {
+            e.preventDefault();
+            const email = document.getElementById('authEmail').value;
+            const pass = document.getElementById('authPassword').value;
+
+            if(authMode === 'login') {
+                const user = users.find(u => u.email === email && u.password === pass);
+                if(user) {
+                    currentUser = user;
+                    localStorage.setItem('rasa_currentUser', JSON.stringify(user));
+                    updateAuthUI();
+                    closeAuthModal();
+                    showNotification(`Selamat datang, ${user.name}!`);
+                } else {
+                    showNotification("Akun tidak ditemukan atau sandi salah.", "error");
+                }
+            } else {
+                const name = document.getElementById('authName').value;
+                if(users.find(u => u.email === email)) {
+                    showNotification("Email sudah terdaftar.", "error");
+                } else {
+                    const newUser = { name, email, password: pass, isAdmin: false };
+                    users.push(newUser);
+                    localStorage.setItem('rasa_users', JSON.stringify(users));
+                    currentUser = newUser;
+                    localStorage.setItem('rasa_currentUser', JSON.stringify(newUser));
+                    updateAuthUI();
+                    closeAuthModal();
+                    showNotification("Pendaftaran berhasil!");
+                }
+            }
+        };
+
+        function updateAuthUI() {
+            const profileArea = document.getElementById('userProfile');
+            const adminBtn = document.getElementById('adminBtn');
+            
+            if(currentUser) {
+                profileArea.innerHTML = `
+                    <div class="flex items-center gap-2 bg-gray-900 text-white pl-2 pr-4 py-1.5 rounded-full cursor-pointer hover:bg-gray-800 transition group" onclick="openAuthModal()">
+                        <div class="w-8 h-8 bg-brand rounded-full flex items-center justify-center text-xs font-bold shadow-inner">
+                            ${currentUser.name.charAt(0)}
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-[10px] text-gray-400 leading-none">Halo,</span>
+                            <span class="text-xs font-bold leading-tight">${currentUser.name.split(' ')[0]}</span>
+                        </div>
+                        <i class="fas fa-sign-out-alt ml-2 text-gray-500 group-hover:text-brand transition text-xs"></i>
+                    </div>
+                `;
+                if(currentUser.isAdmin) adminBtn.classList.remove('hidden');
+                else adminBtn.classList.add('hidden');
+            } else {
+                profileArea.innerHTML = `<button onclick="openAuthModal()" class="bg-gray-900 text-white px-6 py-2.5 rounded-full font-bold text-sm hover:shadow-xl hover:scale-105 transition active:scale-95">Masuk</button>`;
+                adminBtn.classList.add('hidden');
+            }
+        }
+
+        // --- MENU LOGIC ---
+        window.filterMenu = (category) => {
+            currentFilter = category;
+            const btns = document.querySelectorAll('.filter-btn');
+            btns.forEach(b => {
+                if(b.innerText === category) {
+                    b.classList.add('bg-brand', 'text-white', 'shadow-lg');
+                    b.classList.remove('bg-white', 'text-gray-500');
+                } else {
+                    b.classList.remove('bg-brand', 'text-white', 'shadow-lg');
+                    b.classList.add('bg-white', 'text-gray-500');
+                }
+            });
+            renderMenu();
+        };
+
+        function renderMenu() {
+            const grid = document.getElementById('menuGrid');
+            const items = currentFilter === 'Semua' ? menuData : menuData.filter(m => m.category === currentFilter);
+            
+            grid.innerHTML = items.map(item => `
+                <div class="group bg-white rounded-[40px] p-4 shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col h-full">
+                    <div class="relative overflow-hidden rounded-[32px] mb-4 aspect-square">
+                        <img ${getSafeImage(item.image)} class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="[Hidangan]">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold shadow-sm">⭐ ${item.rating}</div>
+                    </div>
+                    <div class="px-2 flex-1">
+                        <p class="text-[11px] text-gray-400 font-bold uppercase tracking-wider mb-1">${item.category}</p>
+                        <!-- Nama Menu: Diperbesar -->
+                        <h4 class="font-extrabold text-xl md:text-2xl mb-1.5 group-hover:text-brand transition">${item.name}</h4>
+                        <!-- Deskripsi Menu: Diperbesar -->
+                        <p class="text-sm md:text-base text-gray-500 line-clamp-2 mb-4 leading-relaxed">${item.desc}</p>
+                    </div>
+                    <div class="px-2 pb-2 mt-auto flex justify-between items-center">
+                        <!-- Harga Menu: Diperbesar -->
+                        <span class="font-extrabold text-xl md:text-2xl text-gray-900">${formatRupiah(item.price)}</span>
+                        <button onclick="addToCart(${item.id})" class="w-10 h-10 bg-gray-900 text-white rounded-2xl flex items-center justify-center hover:bg-brand transition active:scale-90">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderRecommendations() {
+            const sorted = [...menuData].sort((a, b) => b.rating - a.rating).slice(0, 3);
+            const grid = document.getElementById('recommendationGrid');
+            grid.innerHTML = sorted.map(item => `
+                <div class="group bg-white rounded-[32px] p-6 shadow-sm hover:shadow-xl transition-all duration-500 border border-gray-100 flex gap-6">
+                    <img ${getSafeImage(item.image)} class="w-24 h-24 rounded-2xl object-cover group-hover:scale-110 transition duration-500 shadow-md" alt="[Rekomendasi]">
+                    <div class="flex-1 flex flex-col justify-center">
+                        <div class="flex items-center gap-1 text-yellow-500 text-xs font-bold mb-1">
+                            <i class="fas fa-star"></i> ${item.rating}
+                        </div>
+                        <!-- Nama Menu Rekomendasi: Diperbesar -->
+                        <h4 class="font-bold text-xl text-gray-900 group-hover:text-brand transition">${item.name}</h4>
+                        <!-- Harga Menu Rekomendasi: Diperbesar -->
+                        <p class="text-sm text-gray-400 font-extrabold uppercase mt-1">${formatRupiah(item.price)}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // --- CART LOGIC ---
+        window.addToCart = (id) => {
+            const item = menuData.find(m => m.id === id);
+            const inCart = cart.find(c => c.id === id);
+            if(inCart) inCart.quantity++;
+            else cart.push({ ...item, quantity: 1 });
+            
+            updateCartUI();
+            showNotification(`${item.name} ditambah ke keranjang.`);
+        };
+
+        function updateCartUI() {
+            const badge = document.getElementById('cartBadge');
+            const list = document.getElementById('cartItems');
+            const totalDisplay = document.getElementById('cartTotal');
+            
+            const totalQty = cart.reduce((s, i) => s + i.quantity, 0);
+            const totalPrice = cart.reduce((s, i) => s + (i.price * i.quantity), 0);
+
+            if(totalQty > 0) {
+                badge.innerText = totalQty;
+                badge.classList.remove('hidden');
+            } else {
+                badge.classList.add('hidden');
+            }
+
+            list.innerHTML = cart.length ? cart.map(item => `
+                <div class="flex gap-4">
+                    <img ${getSafeImage(item.image)} class="w-16 h-16 rounded-xl object-cover shadow-sm" alt="[Keranjang]">
+                    <div class="flex-1">
+                        <h5 class="font-bold text-sm">${item.name}</h5>
+                        <p class="text-xs text-gray-400 mb-2">${formatRupiah(item.price)}</p>
+                        <div class="flex items-center gap-3">
+                            <button onclick="changeQty(${item.id}, -1)" class="w-6 h-6 border rounded-lg flex items-center justify-center hover:bg-gray-100"><i class="fas fa-minus text-[8px]"></i></button>
+                            <span class="text-sm font-bold">${item.quantity}</span>
+                            <button onclick="changeQty(${item.id}, 1)" class="w-6 h-6 border rounded-lg flex items-center justify-center hover:bg-gray-100"><i class="fas fa-plus text-[8px]"></i></button>
+                        </div>
+                    </div>
+                </div>
+            `).join('') : `<div class="text-center py-20 text-gray-400">Keranjang masih kosong</div>`;
+
+            totalDisplay.innerText = formatRupiah(totalPrice);
+            document.getElementById('checkoutBtn').disabled = cart.length === 0;
+        }
+
+        window.changeQty = (id, delta) => {
+            const index = cart.findIndex(c => c.id === id);
+            if(index !== -1) {
+                cart[index].quantity += delta;
+                if(cart[index].quantity <= 0) cart.splice(index, 1);
+                updateCartUI();
+            }
+        };
+
+        window.openCart = () => {
+            const modal = document.getElementById('cartModal');
+            const side = document.getElementById('cartSidebar');
+            const over = document.getElementById('cartOverlay');
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                side.classList.remove('translate-x-full');
+                over.classList.remove('opacity-0');
+            }, 10);
+        };
+
+        window.closeCart = () => {
+            const side = document.getElementById('cartSidebar');
+            const over = document.getElementById('cartOverlay');
+            side.classList.add('translate-x-full');
+            over.classList.add('opacity-0');
+            setTimeout(() => document.getElementById('cartModal').classList.add('hidden'), 300);
+        };
+
+        // --- PAYMENT LOGIC ---
+        document.getElementById('checkoutBtn').onclick = () => {
+            if(!currentUser) {
+                showNotification("Harap masuk dulu sebelum memesan.", "error");
+                openAuthModal();
+                return;
+            }
+            closeCart();
+            const totalPrice = cart.reduce((s, i) => s + (i.price * i.quantity), 0);
+            document.getElementById('paymentTotalDisplay').innerText = formatRupiah(totalPrice);
+            
+            const modal = document.getElementById('paymentModal');
+            const overlay = document.getElementById('paymentOverlay');
+            const content = document.getElementById('paymentContent');
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                overlay.classList.remove('opacity-0');
+                content.classList.remove('scale-95', 'opacity-0');
+            }, 10);
+        };
+
+        window.selectMethod = (method) => {
+            selectedMethod = method;
+            document.querySelectorAll('.payment-method').forEach(b => {
+                b.classList.remove('border-brand', 'bg-orange-50');
+                if(b.innerText.includes(method)) b.classList.add('border-brand', 'bg-orange-50');
+            });
+        };
+
+        window.closePayment = () => {
+            const overlay = document.getElementById('paymentOverlay');
+            const content = document.getElementById('paymentContent');
+            overlay.classList.add('opacity-0');
+            content.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => document.getElementById('paymentModal').classList.add('hidden'), 300);
+        };
+
+        window.processPayment = () => {
+            if(!selectedMethod) {
+                showNotification("Pilih metode pembayaran!", "error");
+                return;
+            }
+            showNotification(`Pembayaran via ${selectedMethod} Berhasil! Pesanan sedang disiapkan.`);
+            cart = [];
+            updateCartUI();
+            closePayment();
+        };
+
+        // --- ADMIN LOGIC ---
+        window.openAdminModal = () => {
+            renderAdminTable();
+            document.getElementById('adminModal').classList.remove('hidden');
+        };
+
+        window.closeAdminModal = () => document.getElementById('adminModal').classList.add('hidden');
+
+        function renderAdminTable() {
+            const body = document.getElementById('adminTableBody');
+            body.innerHTML = menuData.map(item => `
+                <tr>
+                    <td class="py-4">
+                        <div class="flex items-center gap-3">
+                            <img ${getSafeImage(item.image)} class="w-10 h-10 rounded-lg object-cover" alt="[Kelola]">
+                            <span class="font-bold text-sm">${item.name}</span>
+                        </div>
+                    </td>
+                    <td class="py-4 text-xs font-medium text-gray-500">${item.category}</td>
+                    <td class="py-4 text-sm font-bold">${formatRupiah(item.price)}</td>
+                    <td class="py-4 text-xs">⭐ ${item.rating}</td>
+                    <td class="py-4 text-right">
+                        <button onclick="openFormModal(${item.id})" class="text-blue-500 hover:bg-blue-50 px-3 py-2 rounded-lg transition"><i class="fas fa-edit"></i></button>
+                        <button onclick="askDelete(${item.id})" class="text-red-500 hover:bg-red-50 px-3 py-2 rounded-lg transition"><i class="fas fa-trash-alt"></i></button>
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        window.updateImagePreview = (url) => {
+            const preview = document.getElementById('formImagePreview');
+            preview.src = url || "https://placehold.co/400x300?text=Pratinjau+Foto";
+        };
+
+        window.openFormModal = (id = null) => {
+            const form = document.getElementById('menuForm');
+            form.reset();
+            document.getElementById('editId').value = id || '';
+            document.getElementById('formTitle').innerText = id ? 'Edit Menu' : 'Tambah Menu Baru';
+            
+            if(id) {
+                const item = menuData.find(m => m.id == id);
+                document.getElementById('mName').value = item.name;
+                document.getElementById('mCategory').value = item.category;
+                document.getElementById('mPrice').value = item.price;
+                document.getElementById('mImage').value = item.image;
+                document.getElementById('mDesc').value = item.desc;
+                updateImagePreview(item.image);
+            } else {
+                updateImagePreview('');
+            }
+            document.getElementById('formModal').classList.remove('hidden');
+        };
+
+        window.closeFormModal = () => document.getElementById('formModal').classList.add('hidden');
+
+        window.handleMenuSubmit = (e) => {
+            e.preventDefault();
+            const id = document.getElementById('editId').value;
+            const data = {
+                name: document.getElementById('mName').value,
+                category: document.getElementById('mCategory').value,
+                price: parseInt(document.getElementById('mPrice').value),
+                image: document.getElementById('mImage').value,
+                desc: document.getElementById('mDesc').value
+            };
+
+            if(id) {
+                const idx = menuData.findIndex(m => m.id == id);
+                menuData[idx] = { ...menuData[idx], ...data };
+                showNotification("Menu diperbarui!");
+            } else {
+                const newId = menuData.length ? Math.max(...menuData.map(m => m.id)) + 1 : 1;
+                menuData.push({ ...data, id: newId, rating: 5.0, reviews: [] });
+                showNotification("Menu baru ditambahkan!");
+            }
+
+            localStorage.setItem('rasa_menu', JSON.stringify(menuData));
+            closeFormModal();
+            renderAdminTable();
+            renderMenu();
+            renderRecommendations();
+        };
+
+        let deleteTargetId = null;
+        window.askDelete = (id) => {
+            deleteTargetId = id;
+            document.getElementById('confirmModal').classList.remove('hidden');
+        };
+        
+        window.cancelConfirm = () => document.getElementById('confirmModal').classList.add('hidden');
+
+        document.getElementById('confirmActionBtn').onclick = () => {
+            if(deleteTargetId) {
+                menuData = menuData.filter(m => m.id !== deleteTargetId);
+                localStorage.setItem('rasa_menu', JSON.stringify(menuData));
+                renderAdminTable();
+                renderMenu();
+                renderRecommendations();
+                showNotification("Item dihapus.", "error");
+                cancelConfirm();
+            }
+        };
+
+        // --- INIT ---
+        window.onload = () => {
+            updateAuthUI();
+            renderMenu();
+            renderRecommendations();
+            updateCartUI();
+            
+            // Background Nav change on scroll
+            window.onscroll = () => {
+                const nav = document.getElementById('mainNav');
+                if(window.scrollY > 50) nav.classList.add('py-2');
+                else nav.classList.remove('py-2');
+            };
+        };
+    </script>
+</body>
+</html>
+
+```
+          <div class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-orange-100 text-brand text-xs font-bold animate-pulse">
                     <i class="fas fa-award"></i> Restoran Nusantara #1 di Indonesia
                 </div>
                 <h1 class="text-6xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight text-gray-900">
